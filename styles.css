@@ -1,26 +1,31 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to right, #ff99cc, #ffb7d6);
+    background-image: linear-gradient(to right, #3498db, #ffffff);
+    color: #333;
 }
+
 header {
-    background-color: #333;
+    background-color: #2980b9;
     color: #fff;
     text-align: center;
     padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 #menu a {
-    color: white;
+    color: #2980b9;
     text-decoration: none;
     padding: 10px;
     transition: all 0.5s ease;
 }
+
 #menu a:hover {
     transform: scale(1.1);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
+
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -29,76 +34,54 @@ header {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .container > * {
     margin-bottom: 20px;
 }
+
 .container h2 {
     font-weight: normal;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #ff99cc;
+    color: #2980b9;
 }
+
 .container h2::before {
     content: '';
     width: 100%;
     height: 2px;
-    background-color: #ff99cc;
+    background-color: #2980b9;
     display: block;
     margin-top: 10px;
 }
+
 .container p {
     line-height: 1.5;
     font-size: 16px;
-    color: #333;
 }
+
 .container ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    list-style-type: none;
+    padding-left: 0;
 }
+
 .container ul li {
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffb7d6;
-    transition: all 0.5s ease;
+   font-size :18px; 
+   font-weight :bold; 
+   color :#3498db; 
 }
+
 .container ul li:nth-child(odd) {
-    background-color: #ff99cc;
+   background-color:#3498db; 
+   color:white; 
 }
+
 .container ul li:nth-child(even) {
-    background-color: #ffb7d6;
+   background-color:#2980b9; 
+   color:white; 
 }
+
 .container ul li:not(:last-child):after {
-    content: ',';
-    margin-left: 5px;
-}
-.container ul li:first-of-type {
-    margin-top: 0;
-}
-.container ul li:last-of-type {
-    margin-bottom: 0;
-}
-.container ul li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-.container ul li.active {
-    transform: translateY(5px);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-}
-.container ul li.active::before {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background-color: #ff99cc;
-    display: block;
-    margin-top: 10px;
-}
-.container ul li.active span {
-    color: #ff99cc;
-}
-.container ul li.active span:before {
-    content: '\2022';
-    margin-right: 5px;
-    color: #ff99cc;
+   content:',';
+   margin-left :5px; 
 }
